@@ -13,3 +13,15 @@ users = pd.read_csv(r"C:\Users\ARYA GUPTA\Desktop\Projects Data\Books Recommenda
 
 ```
 
+## Collaborative Filtering Based Recommendation System
+
+We cannot use each and every user's input to build our recommendation system as we might run into the risk of overfitting our prediction model.
+
+  -  Applying the GroupBy function to group the data and filter effectively
+
+``` python
+
+book_ratings.groupby('User-ID').count()
+
+```
+
