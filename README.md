@@ -1,11 +1,10 @@
 # Books Recommendation System
 
 In this recommendation system we wil build a couple of recommenadtion systems:
-  - Popularity Based Recommendation System: We can create a custom formula to calculate a popularity based recommendation system. However, we are 
+  - **Popularity Based Recommendation System**: We can create a custom formula to calculate a popularity based recommendation system. However, we are not introducing any custom formulas here and just taking the 50 most rated books with the minimum number of ratings set at 250 and then sorting them by their average rating.
 
-## Content-Based Recommendation System Notebook
-- In this notebook, we will explore and implement a content-based recommendation system. Content-based recommendation systems suggest items to users based on the characteristics of the items and a profile of the user's preferences.
-- This approach is particularly useful when we have a lot of information about the items and the users' preferences. We will build a simple content-based recommendation system using Python and the scikit-learn library.
+  - **Collaborative Filtering Based Recommendation System**: In this notebook, we will explore and implement a content-based recommendation system. Content-based recommendation systems suggest items to users based on the characteristics of the items and a profile of the user's preferences.
+  This approach is particularly useful when we have a lot of information about the items and the users' preferences. We will build a simple content-based recommendation system using Python and the scikit-learn library.
 
 ### Read Data 
 
@@ -46,7 +45,7 @@ filtered_books = b[b].index
 filtered_books_list = filtered_users_list[filtered_users_list['Book-Title'].isin(filtered_books)]
 ```
 
-  
+At the end, we will use word-vectorisations and co-sine similarity to plot books similar to each other and find them.
 
 
 
